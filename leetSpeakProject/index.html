@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Leet Speak Converter</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Leet Speak Converter</h1>
+    <label for="level">Choisissez un niveau de leet speak (1 ou 2) :</label>
+    <select id="level">
+      <option value="1">Niveau 1</option>
+      <option value="2">Niveau 2</option>
+      <option value="3">Niveau 3</option>
+    </select>
+    <br>
+    <label for="inputText">Entrez le texte à convertir en leet speak :</label>
+    <textarea id="inputText" rows="4" cols="50"></textarea>
+    <button id="convertButton">Convertir</button>
+    <p>Texte en leet speak :</p>
+    <p id="result"></p>
+    <button id="copyButton">Copier dans le presse-papiers</button>
+  </div>
+  <script src="script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+Condition d'utilisation
+
+- instalation du pluggin live serveur de visual studio code requise
+
+une fois installé faites clique droit puis 
+open with live serveur sur le fichier index.html

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knacki convertor</title>
+    <link rel="icon" type="image/x-icon" href="images\icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Convertir en Knakis</h1>
+    </header>
+
+    <main class="container">
+        <h1>Convertir en Knakis</h1>
+
+        <form class="conversion-form">
+            <div class="form-group">
+                <label for="longueur">Longueur (cm) :</label>
+                <input type="number" id="longueur" name="longueur" required>
+            </div>
+
+            <div class="form-group">
+                <label for="largeur">Largeur (cm) :</label>
+                <input type="number" id="largeur" name="largeur" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hauteur">Hauteur (cm) :</label>
+                <input type="number" id="hauteur" name="hauteur" required>
+            </div>
+
+            <div class="form-group">
+                <label for="poids">Poids :</label>
+                <input type="number" id="poids" name="poids" required>
+                <select id="unitePoids" name="unitePoids">
+                    <option value="gr">g</option>
+                    <option value="kg">kg</option>
+                    <option value="tonnes">tonnes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="planete">Planète :</label>
+                <select id="planete" name="planete">
+                    <option value="terre">Terre</option>
+                    <option value="lune">Lune</option>
+                    <option value="mars">Mars</option>
+                    <option value="venus">Vénus</option>
+                    <option value="jupiter">Jupiter</option>
+                </select>
+            </div>
+
+            <form class="conversion-form">
+                <button type="button" onclick="convertLongueur()">Convertir Longueur</button>
+                <button type="button" onclick="convertLargeur()">Convertir Largeur</button>
+                <button type="button" onclick="calculateArea()">Calculer l'aire</button>
+                <button type="button" onclick="convertPoids()">Convertir Poids</button>
+                <button type="button" onclick="calculateVolume()">Calculer le volume</button>
+                <button type="button" onclick="calculateFallTime()">Calculer temps de chute</button>
+            </form>
+        </form>
+
+        <div class="modal" id="resultModal">
+            <div class="modal-content">
+                <span class="close" onclick="hideModal()">&times;</span>
+                <div id="resultat"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Andras Corda. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
